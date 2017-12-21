@@ -1,0 +1,53 @@
+osx_image: xcode8.3
+language: objective-c
+cache:
+  - bundler
+  - cocoapods
+rvm: 2.3.1
+
+matrix:
+  include:
+    - podfile: ios/objc/Podfile
+      env: 
+        - LANGUAGE=ObjC
+        - DIR=ios/objc
+    - podfile: ios-starter/objc-starter/Podfile
+      env:
+        - LANGUAGE=ObjC
+        - DIR=ios-starter/objc-starter
+      before_install:
+        - open -a "simulator" --args -CurrentDeviceUDID F60B87EC-8969-41A7-90ED-D0826ECC32DB
+        - bundle install
+        - gem install xcpretty
+        - cd ios-starter/objc-starter
+        - bundle exec pod install --repo-update
+        - cd -
+    - podfile: ios/swift/Podfile
+      env: 
+        - LANGUAGE=Swift
+        - DIR=ios/swift
+    - podfile: ios-starter/swift-starter/Podfile
+      env: 
+        - LANGUAGE=Swift
+        - DIR=ios-starter/swift-starter
+      before_install:
+        - open -a "simulator" --args -CurrentDeviceUDID F60B87EC-8969-41A7-90ED-D0826ECC32DB
+        - bundle install
+        - gem install xcpretty
+        - cd ios-starter/swift-starter
+        - bundle exec pod install --repo-update
+        - cd -
+
+before_install:
+  - open -a "simulator" --args -CurrentDeviceUDID F60B87EC-8969-41A7-90ED-D0826ECC32DB
+  - bundle install
+  - gem install xcpretty
+  - cd ios/$LANGUAGE
+  - bundle exec pod install --repo-update
+  - cp ../mock-GoogleService-Info.plist ./GoogleService-Info.plist
+  - sed -i '' '/<key>BUNDLE_ID</{n;s/id/com.google.firebase.codelab.AppQuality'$LANGUAGE'/;}' GoogleService-Info.plist
+  - gem install xcodeproj
+  - ruby ../info_script.rb $LANGUAGE
+  - cd -
+
+script: ./test.sh

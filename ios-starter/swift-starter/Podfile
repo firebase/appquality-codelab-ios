@@ -1,0 +1,11 @@
+# AppQuality Codelab
+
+use_frameworks!
+platform :ios, '7.0'
+
+pod 'Firebase/Performance'
+pod 'Fabric', '~> 1.7.2'
+pod 'Crashlytics', '~> 3.9.3'
+
+target 'AppQualitySwift' do
+end
