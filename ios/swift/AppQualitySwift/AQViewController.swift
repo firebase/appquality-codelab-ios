@@ -45,7 +45,10 @@ class AQViewController: UIViewController {
 
     let fileLength = contents.lengthOfBytes(using: .utf8)
 
-    trace?.incrementCounter(named: "log_file_size", by: fileLength)
+    trace?.setValue(Int64(fileLength), forMetric: "log_file_size")
+    
+    let fileLengthString = fileLength > (1024 * 1024) ? ">1MB": "<1MB"
+    trace?.setValue(fileLengthString, forAttribute: "file_size")
 
     let target = "https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_96dp.png"
     guard let targetUrl = URL(string: target) else { return }
@@ -75,7 +78,7 @@ class AQViewController: UIViewController {
     }
 
     task.resume()
-    trace?.incrementCounter(named: "request_sent")
+    trace?.incrementMetric("request_sent", by: 1)
   }
 
   @IBAction func didPressCrash(_ sender: AnyObject) {
