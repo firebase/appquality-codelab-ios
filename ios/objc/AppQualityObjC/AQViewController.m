@@ -52,8 +52,11 @@
     fileLength = contents.length;
   }
 
-  [trace incrementCounterNamed:@"log_file_size" by:fileLength];
+  [trace setIntValue:fileLength forMetric:@"log_file_size"];
 
+  NSString *fileLengthString = fileLength > (1024 * 1024) ? @">1MB": @"<1MB";
+  [trace setValue:fileLengthString forAttribute:@"file_size"];
+  
   NSString *target = @"https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_96dp.png";
   NSURL *targetUrl = [NSURL URLWithString:target];
   NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:targetUrl];
@@ -81,7 +84,7 @@
                             error:nil];
     }] resume];
 
-  [trace incrementCounterNamed:@"request_sent"];
+  [trace incrementMetric:@"request_sent" byInt:1];
 }
 
 - (IBAction)didPressCrash:(id)sender {
