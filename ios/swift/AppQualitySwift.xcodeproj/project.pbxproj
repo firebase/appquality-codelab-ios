@@ -13,13 +13,11 @@
 		10AF4CB51DD236DE0096D192 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10AF4CB11DD236DE0096D192 /* Images.xcassets */; };
 		10AF4CB61DD236DE0096D192 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10AF4CB21DD236DE0096D192 /* LaunchScreen.xib */; };
 		10C456991FEC31950052ED5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10C456981FEC31950052ED5C /* GoogleService-Info.plist */; };
-		36C38752575951B791DC28C6 /* Pods_AppQualitySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42E7BA5CCD1F4837B090C31 /* Pods_AppQualitySwift.framework */; };
 		5F5A537E1ADE67D500F81DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A537D1ADE67D500F81DF0 /* AppDelegate.swift */; };
 		5F5A53801ADE67D500F81DF0 /* AQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A537F1ADE67D500F81DF0 /* AQViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C966C912840AACE3A4F6731 /* Pods-AppQualitySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppQualitySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppQualitySwift/Pods-AppQualitySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		1037935F1BF4256400C88958 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = Pods/Firebase/Headers/module.modulemap; sourceTree = "<group>"; };
 		107960721C612531003DB6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		107960741C61253B003DB6CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,11 +26,9 @@
 		10AF4CB11DD236DE0096D192 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		10AF4CB21DD236DE0096D192 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		10C456981FEC31950052ED5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5D864529CAB31135E3E0F9EC /* Pods-AppQualitySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppQualitySwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppQualitySwift/Pods-AppQualitySwift.release.xcconfig"; sourceTree = "<group>"; };
 		5F5A53791ADE67D500F81DF0 /* AppQualitySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppQualitySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5A537D1ADE67D500F81DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F5A537F1ADE67D500F81DF0 /* AQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQViewController.swift; sourceTree = "<group>"; };
-		F42E7BA5CCD1F4837B090C31 /* Pods_AppQualitySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppQualitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36C38752575951B791DC28C6 /* Pods_AppQualitySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,15 +61,6 @@
 			path = assets;
 			sourceTree = "<group>";
 		};
-		4C332682275EA773828ECA97 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0C966C912840AACE3A4F6731 /* Pods-AppQualitySwift.debug.xcconfig */,
-				5D864529CAB31135E3E0F9EC /* Pods-AppQualitySwift.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5F5A53431ADE670C00F81DF0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +69,6 @@
 				5F5A537A1ADE67D500F81DF0 /* AppQualitySwift */,
 				5F5A534D1ADE670C00F81DF0 /* Products */,
 				AD1F1C80A93A096F652504F5 /* Frameworks */,
-				4C332682275EA773828ECA97 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				1037935F1BF4256400C88958 /* module.modulemap */,
-				F42E7BA5CCD1F4837B090C31 /* Pods_AppQualitySwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,12 +114,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F5A53991ADE67D500F81DF0 /* Build configuration list for PBXNativeTarget "AppQualitySwift" */;
 			buildPhases = (
-				44F42190010F23548C07D428 /* [CP] Check Pods Manifest.lock */,
 				5F5A53751ADE67D500F81DF0 /* Sources */,
 				5F5A53761ADE67D500F81DF0 /* Frameworks */,
 				5F5A53771ADE67D500F81DF0 /* Resources */,
 				779FCD6F1FDF0B2F00582829 /* ShellScript */,
-				E0032169F340CDD013E5FE48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,24 +189,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44F42190010F23548C07D428 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppQualitySwift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		779FCD6F1FDF0B2F00582829 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,30 +201,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
-		};
-		E0032169F340CDD013E5FE48 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AppQualitySwift/Pods-AppQualitySwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppQualitySwift/Pods-AppQualitySwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -393,7 +333,6 @@
 		};
 		5F5A53951ADE67D500F81DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C966C912840AACE3A4F6731 /* Pods-AppQualitySwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -415,7 +354,6 @@
 		};
 		5F5A53961ADE67D500F81DF0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D864529CAB31135E3E0F9EC /* Pods-AppQualitySwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
