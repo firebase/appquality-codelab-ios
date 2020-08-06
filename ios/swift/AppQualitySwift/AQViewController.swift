@@ -16,7 +16,6 @@
 
 import UIKit
 import Firebase
-import Crashlytics
 
 @objc(AQViewController)
 class AQViewController: UIViewController {
@@ -83,6 +82,6 @@ class AQViewController: UIViewController {
 
   @IBAction func didPressCrash(_ sender: AnyObject) {
     print("Crash button pressed!")
-    Crashlytics.sharedInstance().crash()
+    fatalError()
   }
 }

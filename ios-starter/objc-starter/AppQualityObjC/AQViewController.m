@@ -16,7 +16,6 @@
 
 #import "AQViewController.h"
 @import Firebase;
-@import Crashlytics;
 
 @interface AQViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;

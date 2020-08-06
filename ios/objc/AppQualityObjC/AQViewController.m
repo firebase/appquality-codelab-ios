@@ -16,7 +16,6 @@
 
 #import "AQViewController.h"
 @import Firebase;
-@import Crashlytics;
 
 @interface AQViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -89,7 +88,6 @@
 
 - (IBAction)didPressCrash:(id)sender {
   NSLog(@"Crash button pressed!");
-  [[Crashlytics sharedInstance] crash];
   assert(NO);
 }
 

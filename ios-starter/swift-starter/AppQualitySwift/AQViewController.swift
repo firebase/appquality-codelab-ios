@@ -16,7 +16,6 @@
 
 import UIKit
 import Firebase
-import Crashlytics
 
 @objc(AQViewController)
 class AQViewController: UIViewController {
