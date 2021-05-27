@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/CocoaPods/Xcodeproj.git
-  revision: 907c81763a7660978fda93b2f38f05de0cbb51ad
+  revision: e7b69aa7866bc7b4ff34f96566af8389216fc680
   specs:
     xcodeproj (1.19.0)
       CFPropertyList (>= 2.3.3, < 4.0)
@@ -79,7 +79,7 @@ GEM
     escape (0.0.4)
     ethon (0.14.0)
       ffi (>= 1.15.0)
-    ffi (1.15.0)
+    ffi (1.15.1)
     fourflusher (2.3.1)
     fuzzy_match (2.0.4)
     gh_inspector (1.1.3)
