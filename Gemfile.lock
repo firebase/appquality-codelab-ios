@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/CocoaPods/CocoaPods.git
-  revision: 2e285ae6be8aadf0e6319a51626d5176c47e0ede
+  revision: 69a56890ee01a8f23e9cb27eacabbfe66db31fe3
   specs:
-    cocoapods (1.11.0.beta.2)
+    cocoapods (1.11.0.rc.1)
       addressable (~> 2.8)
       claide (>= 1.0.2, < 2.0)
-      cocoapods-core (= 1.11.0.beta.2)
+      cocoapods-core (= 1.11.0.rc.1)
       cocoapods-deintegrate (>= 1.0.3, < 2.0)
       cocoapods-downloader (>= 1.4.0, < 2.0)
       cocoapods-plugins (>= 1.0.0, < 2.0)
@@ -23,9 +23,9 @@ GIT
 
 GIT
   remote: https://github.com/CocoaPods/Core.git
-  revision: 0a0394afabd9c5f0838fc044e1c817024499dace
+  revision: 97f80f322e0e62b88d14ac35d7c66c6308fa61c5
   specs:
-    cocoapods-core (1.11.0.beta.2)
+    cocoapods-core (1.11.0.rc.1)
       activesupport (>= 5.0, < 7)
       addressable (~> 2.8)
       algoliasearch (~> 1.0)
@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/CocoaPods/Xcodeproj.git
-  revision: 5694e58661d830c6c57e318bc805c24597e605a6
+  revision: 6b9db609dbda4bdac339c33ca23efa9c30a88e0e
   specs:
     xcodeproj (1.21.0)
       CFPropertyList (>= 2.3.3, < 4.0)
